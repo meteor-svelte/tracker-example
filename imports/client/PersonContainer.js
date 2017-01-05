@@ -11,11 +11,17 @@ export default withTracker(PersonComponent, {
   },
 
   onrender(component) {
+    let age = 0;
+
     this.interval = setInterval(() => {
-      component.set({
-        age: component.get('age') + 1
-      });
+      age += 1;
+      component.set({ age });
     }, 1000);
+
+    component.on('ageReset', () => {
+      age = 0;
+      component.set({ age });
+    })
   },
 
   onteardown() {

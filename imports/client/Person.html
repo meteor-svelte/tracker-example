@@ -1,8 +1,8 @@
 {{#if person}}
   <h1>Hello, {{person.name}}!</h1>
-  You have aged {{age}} seconds
+  You have aged {{age}} seconds since opening this page. 👵
 
-  <button on:click="resetAge()">
+  <button on:click="fire('ageReset')">
     Reset age
   </button>
 {{/if}}
@@ -13,12 +13,6 @@ export default {
     return {
       age: 0
     };
-  },
-
-  methods: {
-    resetAge() {
-      this.set({ age: 0 });
-    }
   }
 };
 </script>
