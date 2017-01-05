@@ -55,7 +55,7 @@ spacebars-compiler@1.0.13
 standard-minifier-css@1.3.2
 standard-minifier-js@1.2.1
 svelte:compiler@1.0.0
-svelte:tracker@0.0.1
+svelte:tracker@1.0.0
 tracker@1.1.1
 ui@1.0.12
 underscore@1.0.10
