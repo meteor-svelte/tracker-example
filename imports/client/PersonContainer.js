@@ -5,14 +5,14 @@ import Persons from '/imports/collections/persons.js';
 
 export default withTracker(PersonComponent, {
   // The `data` function is called when the container is rendered into the DOM
-  // and when the fetched document changes in the database
+  // and when the fetched document changes in the database.
   data(component) {
     component.set({
       person: Persons.findOne()
     });
   },
 
-  onrender(component) {
+  oncreate(component) {
     let age = 0;
 
     // Increment the age every second and update the component's state with the
@@ -23,14 +23,14 @@ export default withTracker(PersonComponent, {
       component.set({ age });
     }, 1000);
 
-    // Respond to the `ageReset` event fired by the component
+    // Respond to the `ageReset` event fired by the component.
     component.on('ageReset', () => {
       age = 0;
       component.set({ age });
     })
   },
 
-  onteardown() {
+  ondestroy() {
     clearInterval(this.interval);
   }
 });
