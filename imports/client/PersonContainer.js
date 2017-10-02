@@ -4,6 +4,12 @@ import PersonComponent from './Person.html';
 import Persons from '/imports/collections/persons.js';
 
 export default withTracker(PersonComponent, {
+  initialData() {
+    return {
+      person: { name: '' }
+    };
+  },
+
   // The `data` function is called when the container is rendered into the DOM
   // and when the fetched document changes in the database.
   data(component) {
