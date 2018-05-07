@@ -1,12 +1,11 @@
 {
   "name": "tracker-example",
-  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "meteor run"
   },
   "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.39",
-    "meteor-node-stubs": "~0.2.0"
+    "@babel/runtime": "^7.0.0-beta.46",
+    "meteor-node-stubs": "~0.3.2"
   }
 }

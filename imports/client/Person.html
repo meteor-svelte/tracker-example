@@ -1,18 +1,18 @@
-{{#if person}}
-  <h1>Hello, {{person.name}}!</h1>
-  You have aged {{age}} seconds since you have opened this page. 👵
+{#if person}
+  <h1>Hello, {person.name}!</h1>
+  You have aged {age} seconds since you have opened this page. 👵
 
   <button on:click="fire('ageReset')">
     Reset age
   </button>
-{{/if}}
+{/if}
 
 <script>
-export default {
-  data() {
-    return {
-      age: 0
-    };
-  }
-};
+  export default {
+    data() {
+      return {
+        age: 0
+      };
+    }
+  };
 </script>

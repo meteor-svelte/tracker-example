@@ -4,11 +4,11 @@ mongo@1.4.2
 standard-minifier-css@1.4.0
 standard-minifier-js@2.3.1
 es5-shim@4.7.0
-ecmascript@0.10.0
+ecmascript@0.10.6
 shell-server@0.3.1
 
 autopublish@1.0.7
 insecure@1.0.7
 
-svelte:compiler
-svelte:tracker
+svelte:compiler@2.5.0_1
+svelte:tracker@3.0.0
