@@ -1,9 +1,8 @@
 import { Meteor } from 'meteor/meteor';
-
-import PersonContainer from '/imports/client/PersonContainer.js';
+import Person from '/imports/client/Person.svelte';
 
 Meteor.startup(() => {
-  new PersonContainer({
+  new Person({
     target: document.querySelector('main')
   });
 });
