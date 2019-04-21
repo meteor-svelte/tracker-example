@@ -10,7 +10,7 @@
 <script>
   import { Tracker } from 'meteor/tracker';
   import { onDestroy } from 'svelte';
-  import Persons from '/imports/collections/persons.js';
+  import Persons from '/lib/Persons.js';
 
   let person;
   let age = 0;
