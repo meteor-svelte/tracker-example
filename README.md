@@ -4,6 +4,5 @@ Tracker integration example
 
 ## About
 
-This example demonstrates how to create reactive data loading containers for Svelte components using [svelte-tracker](https://github.com/meteor-svelte/svelte-tracker).
-The Svelte component `/imports/client/Person.html` displays a name fetched from MongoDB and a state variable.
-Both of these values are set by the component's container, which is created in `/imports/client/PersonContainer.js`.
+This example demonstrates how to use reactive data sources in Svelte components.
+The Svelte component `/client/Person.svelte` displays a name fetched from MongoDB and a state variable.
