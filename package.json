@@ -4,6 +4,12 @@
   "scripts": {
     "start": "meteor run"
   },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    }
+  },
   "dependencies": {
     "@babel/runtime": "^7.4.3",
     "meteor-node-stubs": "^0.4.1",

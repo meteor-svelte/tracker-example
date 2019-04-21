@@ -1,5 +1,5 @@
 import { Meteor } from 'meteor/meteor';
-import Person from '/imports/client/Person.svelte';
+import Person from './Person.svelte';
 
 Meteor.startup(() => {
   new Person({
