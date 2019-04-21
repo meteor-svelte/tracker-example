@@ -1,6 +1,6 @@
 import { withTracker } from 'meteor/svelte:tracker';
 
-import PersonComponent from './Person.html';
+import PersonComponent from './Person.svelte';
 import Persons from '/imports/collections/persons.js';
 
 export default withTracker(PersonComponent, {
